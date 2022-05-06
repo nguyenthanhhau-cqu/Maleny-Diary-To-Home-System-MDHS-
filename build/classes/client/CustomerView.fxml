@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Controller.CustomerViewController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="3.0" prefHeight="403.0" prefWidth="813.0" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@/client/customerdetails.css" />
+         </stylesheets>
+         <children>
+            <TextField fx:id="phoneField" editable="false" layoutX="141.0" layoutY="131.0" />
+            <TextField fx:id="nameField" editable="false" layoutX="141.0" layoutY="94.0" />
+            <TextField fx:id="addressField" editable="false" layoutX="290.0" layoutY="173.0" prefHeight="70.0" prefWidth="234.0" />
+            <TextField fx:id="emailField" editable="false" layoutX="515.0" layoutY="93.0" />
+            <Text layoutX="36.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name" />
+            <Text layoutX="36.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" />
+            <Text layoutX="418.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address" />
+            <Text layoutX="433.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pasword" />
+            <PasswordField fx:id="passWordField" editable="false" layoutX="515.0" layoutY="131.0" />
+            <Button fx:id="leftBtn" layoutX="241.0" layoutY="279.0" mnemonicParsing="false" onAction="#leftOnclickedBtn" prefHeight="33.0" prefWidth="98.0" text="&lt;&lt;" />
+            <Text layoutX="153.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Address" />
+            <Text fill="#1242d3" layoutX="310.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Display" wrappingWidth="194.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="-26.0" layoutY="207.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0">
+               <children>
+                  <Button fx:id="backBtn1" layoutX="76.0" layoutY="146.0" mnemonicParsing="false" onAction="#backOnclickedBtn" prefHeight="33.0" prefWidth="98.0" text="Back" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="forwardBtn" layoutX="447.0" layoutY="279.0" mnemonicParsing="false" onAction="#forwardsOnclicked" prefHeight="33.0" prefWidth="115.0" text="&gt;&gt;" />
+            <Text layoutX="52.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer No:" />
+            <TextField fx:id="indexField" editable="false" layoutX="134.0" layoutY="45.0" prefHeight="25.0" prefWidth="27.0" text="0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
